@@ -9,6 +9,7 @@ import cartRoutes from "./routes/cart.js";
 import checkoutRoutes from "./routes/checkout.js";
 import ordersRoutes from "./routes/orders.js";
 import contactRoutes from "./routes/contact.js";
+import categoriesRoutes from "./routes/category.js";
 
 const app = express();
 
@@ -21,6 +22,7 @@ app.use("/api/cart", cartRoutes);
 app.use("/api/checkout", checkoutRoutes);
 app.use("/api/orders", ordersRoutes);
 app.use("/api/contact", contactRoutes);
+app.use("/api/categories", categoriesRoutes);
 
 app.get("/", (req, res) => res.send("BuyZaar API running ✅"));
 
